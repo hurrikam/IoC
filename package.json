@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+        "@types/node": "10.12.12",
+        "@types/typescript": "2.0.0",
+        "typescript": "3.2.2"
+    },
+    "scripts": {
+        "app": "node ./output/app",        
+        "compile": "./node_modules/.bin/tsc",
+        "unit-test": "npm run compile && jest ./output --testPathPattern='/.*\\.spec.js$'"
+    },
+    "devDependencies": {
+        "@types/jest": "23.3.10",
+        "jest": "23.6.0"
+    }
+}
